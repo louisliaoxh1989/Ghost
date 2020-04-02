@@ -76,8 +76,7 @@ module.exports = {
         query(frame) {
             frame.options.require = true;
 
-            return models.Invite.destroy(frame.options)
-                .return(null);
+            return models.Invite.destroy(frame.options);
         }
     },
 
